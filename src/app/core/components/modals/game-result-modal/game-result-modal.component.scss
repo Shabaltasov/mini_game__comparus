@@ -1,0 +1,15 @@
+.modal_btn {
+  width: 100px;
+  height: 30px;
+  margin-left: 37%;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px 0 #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal_btn:active {
+  box-shadow: 3px 3px 18px 3px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+}
+

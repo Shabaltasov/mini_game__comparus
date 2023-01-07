@@ -1,0 +1,19 @@
+<div class="game-screen">
+  <app-header
+    (timeInterval)="startGame($event)"
+  ></app-header>
+  <div class="game-screen_play-field">
+
+    <app-game-score
+      [pcScore]="pcScore"
+      [userScore]="userScore"
+    ></app-game-score>
+
+    <div class="game-screen_play-field__blocks_container">
+      <div *ngFor="let block of blocks" class="game-screen_play-field__blocks_container__block" [ngClass]="block.color"
+           (click)="blockIsClicked(block.id)"
+      ></div>
+    </div>
+
+  </div>
+</div>

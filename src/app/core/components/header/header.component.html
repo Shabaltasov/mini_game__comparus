@@ -1,0 +1,15 @@
+<div class="header-container">
+  <h1 class="header-container_label">Click and Think</h1>
+
+  <div class="header-container_action">
+    <app-button class="header-container_action__btn"
+                [buttonText]="'Start'"
+                (click)="startGame()"
+    ></app-button>
+
+    <app-input class="header-container_action__input"
+               [textControl]="gameTimeControl"
+    ></app-input>
+  </div>
+
+</div>

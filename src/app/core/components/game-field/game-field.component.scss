@@ -1,0 +1,57 @@
+.game-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);;
+
+  &_play-field {
+    margin: 30px auto;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    &__blocks_container {
+      margin: 0 auto;
+      width: 470px;
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+
+
+      &__block {
+        margin: 2px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000;
+        background-color: #000fff;
+        border-radius: 7px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.24);
+      }
+
+      &__block:active {
+        box-shadow: 3px 3px 18px 1px rgba(0, 0, 0, 0.24);
+        transform: translateY(4px);
+      }
+
+      &__block.yellow {
+        background-color: #fff000;
+      }
+
+      &__block.red {
+        background-color: #ff0000;
+      }
+
+      &__block.green {
+        background-color: #32CD32FF;
+      }
+    }
+  }
+}
+
+
+
