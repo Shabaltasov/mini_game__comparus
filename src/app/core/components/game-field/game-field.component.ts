@@ -100,4 +100,3 @@ export class GameFieldComponent implements OnInit {
     }
   }
 }
-
