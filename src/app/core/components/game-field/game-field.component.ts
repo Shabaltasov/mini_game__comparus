@@ -18,8 +18,6 @@ export class GameFieldComponent implements OnInit {
   public gameOver = false;
   private gameTime!: number;
 
-
-
   constructor(
     private cdr: ChangeDetectorRef,
     private matDialog: MatDialog,
